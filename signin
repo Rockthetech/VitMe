@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-In Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form class="form">
+      <h1>Sign In</h1>
+      <input type="email" placeholder="Email" name="email" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <button type="submit">Sign In</button>
+      <p class="message">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+.mp{
+    background-image: url(backgroundimg.jpg);
+    position:absolute;
+    justify-content: space-evenly;
+    width: 70.5%;
+    height: 37.9%;
+    margin:-7px;
+    padding:200px;
+}
+button{
+    border-radius: 500px;
+    margin: 30px;
+    margin-top: 100px;
+    margin-left: 35px;
+}
+img{
+    border-radius: 500px;
+    height:230px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+#lightbox{
+    height:0;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+
+#lightbox:target
+{
+    height:70%;
+    width:35%;
+    top:25%;
+    left:25%;
+    background-color:aquamarine;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+    width: 26%;
+    margin:95px;
+    padding: 3px;
+    color: #ffffff;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: pink;
+}
+
+.message {
+  text-align: center;
+}
+
+.message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
