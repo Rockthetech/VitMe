@@ -1,5 +1,5 @@
 .mp{
-    background-image: url(backgroundimg.jpg);
+    background-image: url(vitlogiin.jpg);
     position:absolute;
     justify-content: space-evenly;
     width: 70.5%;
@@ -34,11 +34,10 @@ body {
 
 #lightbox:target
 {
-    height:70%;
-    width:35%;
-    top:25%;
-    left:25%;
-    background-color:aquamarine;
+    height: 74%;
+    width: 35%;
+    top: 15%;
+    left: 27%;
 }
 
 .form {
@@ -71,7 +70,24 @@ button {
     border-radius: 0px;
     cursor: pointer;
 }
-
+.s{
+    margin: 10%;
+    width: 31%;
+    margin-left: 30%;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sm{
+        margin: 10%;
+    width: 31%;
+    margin-left: 30%;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
 button:hover {
   background-color: pink;
 }

@@ -2,7 +2,7 @@
     color:white;
 }
 .main{
-    background-image: url(black.jpg);
+    background-image: url(vitmebackgroung.jpg);
     height:99.9%;
     padding:10px;
     width:99.8%;
@@ -84,4 +84,48 @@ td button:hover{
 }
 .s{
     width:70%;
+}
+
+#lightbox{
+    height:0;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+}
+
+#lightbox:target
+{
+height: 16%;
+    width: 19%;
+    top: 42%;
+    left: 40%;
+    background-color: aquamarine;
+}
+
+button {
+  margin: 6px;
+    margin-left: 38px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.message {
+  text-align: center;
+}
+
+.message a {
+  color: #4CAF50;
+  text-decoration: none;
 }

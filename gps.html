@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicle GPS Tracker</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vehicle GPS Tracker</h1>
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      // Initialize the map
+      const map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 37.7749, lng: -122.4194 }, // Set the initial map center
+        zoom: 12 // Set the initial zoom level
+      });
+
+      // Function to update the marker position
+      function updateMarkerPosition(marker, position) {
+        marker.setPosition(position);
+        map.panTo(position);
+      }
+
+      // Function to track the vehicle position
+      function trackVehicle() {
+        // Simulated vehicle position (longitude and latitude)
+        const longitude = Math.random() * 0.01 + (-122.4194);
+        const latitude = Math.random() * 0.01 + 37.7749;
+        const position = { lat: latitude, lng: longitude };
+
+        // Create a marker if it doesn't exist
+        if (!marker) {
+          marker = new google.maps.Marker({
+            position,
+            map
+          });
+        }
+
+        // Update the marker position
+        updateMarkerPosition(marker, position);
+
+        // Call trackVehicle function every 5 seconds
+        setTimeout(trackVehicle, 5000);
+      }
+
+      // Call trackVehicle function initially
+      trackVehicle();
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

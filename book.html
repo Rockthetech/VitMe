@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classroom Booking</title>
+  <link rel="stylesheet" type="text/css" href="book1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Classroom Booking</h1>
+    <h2>Book a Classroom</h2>
+    <form id="bookForm" method="POST" action="/book">
+      <input type="text" name="classroom" placeholder="Classroom" required/><br>
+      <input type="date" name="date" required/><br>
+      <input type="time" name="startTime" required/><br>
+      <input type="time" name="endTime" required/><br>
+      <button type="submit">Book</button>
+    </form>
+
+    <h2>Cancel a Booking</h2>
+    <form id="cancelForm" method="POST" action="/cancel">
+      <input type="text" name="classroom" placeholder="Classroom" required/><br>
+      <input type="date" name="date" required/><br>
+      <input type="time" name="startTime" required/><br>
+      <input type="time" name="endTime" required/><br>
+      <button type="submit">Cancel</button>
+    </form>
+  </div>
+</body>
+</html>

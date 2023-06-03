@@ -4,9 +4,10 @@ body {
 }
 
 .container {
-  width: 300px;
-  margin: 0 auto;
-  padding-top: 150px;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 39px;
+    border: 2px solid black;
 }
 
 .form {
@@ -24,11 +25,12 @@ h1 {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {

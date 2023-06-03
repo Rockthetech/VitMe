@@ -2,7 +2,7 @@
     color:white;
 }
 .main{
-    background-image: url(black.jpg);
+    background-image: url(vitmebackgroung.jpg);
     height:99.9%;
     padding:10px;
     width:99.8%;
@@ -12,15 +12,15 @@
     
 }
 .tab-titles{
-    background-color: lightblue;
+    background-color: black;
     display:flex;
     width:970px;
     margin:22px 200 22px;
     margin-left:14%;
     margin-top:30px;
     border:none;
-    border-top:5px solid blue ;
-    border-bottom:5px solid blue;
+    border-top:3px solid white ;
+    border-bottom:3px solid white;
 }
 .tab-links{
     margin-right:50px;
